@@ -1,0 +1,1 @@
+{"text": " Hi, this is Rohit.", "segments": [{"id": 0, "seek": 0, "start": 0.0, "end": 2.0, "text": " Hi, this is Rohit.", "tokens": [50364, 2421, 11, 341, 307, 27490, 270, 13, 50464], "temperature": 0.0, "avg_logprob": -0.4352921485900879, "compression_ratio": 0.75, "no_speech_prob": 0.18877285718917847}], "language": "en"}
