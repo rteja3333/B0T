@@ -1,0 +1,33 @@
+
+In the shipping process, there are a few key sub processes, which include − 
+
+Delivery processing of the goods
+Picking of items
+Packing of the goods
+Post goods issue
+Shipping communication
+Planning &amp; monitoring of shipping
+Other functions like batch determination, serial numbers, inspection, etc.
+
+Organizational Units in Shipping
+In shipping the stock of goods is managed at Storage Locations.
+The shipping point key characteristics include −
+
+It is under client location.
+An Outbound Delivery is processed from a single Shipping point.
+Shipping point is determined at Item level in the order.
+Shipping point can process outbound deliveries of several plants.
+
+You can also assign several shipping points to one plant, but each point should have a different loading equipment or a different processing time.
+Other Organization units are warehouse#, type of storage, etc.
+There is a warehouse# that is assigned to a plant and storage location. There can be multiple storage locations in a plant and they can point to one warehouse.
+
+ 
+ 
+  
+
+
+
+					
+
+

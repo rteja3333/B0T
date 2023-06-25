@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Recording</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+    }
+
+    #record-button,
+    #stop-button {
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+<h1 style="position: absolute; top: 20px; left: 20px;">CHAT NTT</h1>
+
+<div class="container">
+    <button id="record-button" class="btn btn-primary" onclick="toggleRecording()">Speak</button>
+    <button id="stop-button" class="btn btn-danger" onclick="stopRecording()" disabled>Stop</button>
+</div>
+
+<script>
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    async function toggleRecording() {
+        if (!mediaRecorder || mediaRecorder.state === 'inactive') {
+            startRecording();
+            document.getElementById('record-button').innerText = 'Recording...';
+            document.getElementById('stop-button').disabled = false;
+        }
+    }
+
+    function startRecording() {
+        navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+            .then(stream => {
+                mediaRecorder = new MediaRecorder(stream);
+                mediaRecorder.addEventListener('dataavailable', handleDataAvailable);
+                mediaRecorder.start();
+            })
+            .catch(console.error);
+    }
+
+   async  function stopRecording() {
+        mediaRecorder.stop();
+        document.getElementById('record-button').innerText = 'Speak';
+        document.getElementById('stop-button').disabled = true;
+        await uploadAudio();
+    }
+
+    function handleDataAvailable(e) {
+        recordedChunks.push(e.data);
+    }
+
+    async function uploadAudio() {
+        try{
+            console.log("uploadAudio");
+            const blob = new Blob(recordedChunks, { type: 'audio/wav' });
+            const formData =   new FormData();
+            formData.append('audio', blob, 'recording.wav');
+    
+            $.ajax({
+                type: 'POST',
+                url: '/upload-audio',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    console.log(response);
+                    displayUserInput(response.user_input); // Call the function to display user input
+                },
+                error: function(error) {
+                    console.error(error);
+                }
+            });
+        }.catch(err){
+            console.log(err);
+        }
+    }
+
+    function displayUserInput(userInput) {
+        const userInputElement = document.getElementById('user-input');
+        userInputElement.textContent = userInput;
+    }
+
+
+</script>
+</body>
+</html>

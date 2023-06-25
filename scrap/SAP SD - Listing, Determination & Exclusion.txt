@@ -1,0 +1,29 @@
+
+
+Listing − You can create a material list for specific customers, which allows those customers to order only those materials which are maintained in the list.
+Exclusion − You can also maintain an exclusion record for specific customers and this doesn’t allow that customer to order those materials.
+
+To display Material listing and exclusion, go to SPRO → Sales and Distribution → Basic functions → Listing/Exclusion.
+
+A new window will open, then you can Activate Listing/Exclusion as shown in the following image and then click choose.
+
+It will show you the existing material listing and exclusion as per the selection.
+
+Creating Material Exclusion
+Use T-Code: VB01
+Select Exclusion Type: B001 and click Key combination to select material and customer.
+
+
+
+Click on the save icon and a confirmation message will be displayed.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

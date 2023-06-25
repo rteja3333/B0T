@@ -1,0 +1,139 @@
+
+SAP Sales and Distribution module is a part of SAP Logistics module that manages customer relationship starting from raising a quotation to sales order and billing of the product or service. This module is closely integrated with other modules like SAP Material Management and PP.
+Key Components in SAP SD
+The key components in SAP Sales and Distribution module are −
+
+Customer and Vendor Master Data
+Sales Support
+Shipping of Material
+Sales Activities
+Billing related
+Transportation of products
+Credit Management
+Contract Handling and Management
+Foreign Trade
+Information System
+
+SAP Sales and Distribution Cycle
+
+SAP SD - Organizational Structure
+SAP provides many components to complete SAP Sales and Distribution organizational structure like Sales Areas, Distribution Channels, Divisions, etc. The SAP SD organization structure majorly consists of two steps −
+
+Creation of Organization elements in SAP system, and
+second is to link each element as per requirement.
+
+On top of this organization structure in the SD module, sales organization is at highest level and is responsible for distribution of goods and services. SAP recommends to keep the number of sales organization in an organizational structure to be minimum. This will help in making the reporting process easy and ideally it should have a single sales organization.
+The next level is distribution channel, which tells the medium by which the products and services are distributed by an organization to its end users. Division in an organizational structure, which represents a product or service line in a single organization.
+A sales area is known as entity, which is required to process an order in a company. It comprises of sales organization, distribution channel and a division.
+In SAP SD organizational structure, each sales organization is assigned to a company code. Then the distribution channel and divisions are assigned to sales organization and all of these comprise to make a sales area.
+In the first step of an SD organizational structure, sales organization is assigned to a company code and then is to define a distribution channel and then division to a sales organization.
+The following diagram shows the organizational structure of a Sales and Distribution module −
+
+Material management
+Material Management is one of the key modules in SAP ERP System and covers the day to day business operations related to inventory and procurement. This module is closely integrated with other modules of R/3 systems like Finance Accounting and Controlling, Sales and Distribution, Quality Management, Product Planning.
+Integration with Sales and Distribution SD Module
+Consider an example of creating a sales order in SAP SD, it involves copying the details of items from Material Management. Availability check of the item and price details are also taken from MM, but this can be controlled in the SD module. To create inbound and outbound delivery of goods for a sales order, shipping details, loading point etc. also comes from the Material Master.
+The item that is placed using a Sales order must be extended to the sales area of an organization to sales order/customer, otherwise it won’t be possible to transact with this material. This confirms that there is a link between SAP SD and MM module, when a sales order is created and fulfilled. Similarly, there are many other links between two modules.
+Finance and Accounting
+SAP FI stands for Financial Accounting and it is one of the important modules of SAP ERP. It is used to store the financial data of an organization. SAP FI helps to analyze the financial condition of a company in the market. It can integrate with other SAP modules like SD, PP, SAP MM, SAP SCM etc.
+For SAP FI-MM, use T-code: OBYC
+
+In case of a standard sales order, you create an outbound goods delivery to the customer. Here movement 601 takes place. This movement is configured in MM and movement of goods hit some G/L account in FI. This shows the integration between SAP SD, FI and MM module.
+Document Flow
+This shows how a transaction in one system effects the details in other systems of an SAP module.
+Consider the following transaction −
+For SAP FI-MM, use T-code: OBYC
+Whenever there is a delivery created with reference to a sales order, goods movement takes place in the system.
+
+Example
+In case of a standard sales order in the SD module, you create an outbound goods delivery to the customer. Availability check and retail price of that product is checked in the MM module. Here, movement 601 takes place. This movement is configured in the MM and movement of goods hit some G/L account in FI. Every such movement of goods hits General Ledger account in FI.
+The accounts posting in FI is done with reference to the billing documents like credit and debit note, invoice etc. created in SD and hence this is the link between SD and FI. This shows the document flow between different modules.
+Process Chain
+SD module is closely integrated with other SAP modules. The following tables will give you a brief idea on how SD is linked with other modules −
+Sales Order
+
+
+Link Points
+Module Involved
+
+
+Availability Check
+MM
+
+
+Credit Check
+FI
+
+
+Costing
+CO/MM
+
+
+Tax Determination
+FI
+
+
+Transfer of Requirements
+PP/MM
+
+
+Billing
+
+
+Integration Point
+Module
+
+
+Debit A/R
+FI/CO
+
+
+Credit Revenue
+FI/CO
+
+
+Updates G/l (Tax,discounts,surcharges,etc)
+FI/CO
+
+
+Milestone Billing
+PS
+
+
+Goods Delivery and Issue of goods
+
+
+Integration
+Module
+
+
+Availability Check
+MM
+
+
+Credit Check
+FI
+
+
+Reduces Stock
+MM
+
+
+Reduces Inventory
+FI/CO
+
+
+Reduces Eliminated
+PP/MM
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

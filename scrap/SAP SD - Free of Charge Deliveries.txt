@@ -1,0 +1,42 @@
+
+Steps to be followed in case of Return request
+
+Credit Memo − This is done when the customer wants a refund for the delivered goods. The system creates a credit memo sales document for the customer with reference to the sales order.
+Subsequent Delivery − This includes free of charge delivery of disputed goods to the customer. This is required when incorrect quantity of goods are delivered to the customer.
+
+Creating a return request in the system: T-Code: VA01. Then enter the details as shown below −
+
+Enter Sale Order number and click Copy.
+
+Then you can enter the following details −
+
+PO Number
+PO Date
+Order Reason
+Order Quantity and then Click save.
+
+
+
+
+For creating a Return Delivery Document, use T-Code: VL01N.
+Enter the Shipping Point and then Delivery Date as Return Delivery and then press ENTER.
+
+You can then enter Quantity of goods and click save.
+For creating Free of Charge Delivery, use T-Code: VA01
+Order Type: Delivery free of charge
+
+Enter the PO number and click Copy.
+
+Enter Order Reason and Quantity.
+
+Click the save button.
+
+ 
+ 
+  
+
+
+
+					
+
+

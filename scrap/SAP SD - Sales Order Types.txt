@@ -1,0 +1,30 @@
+
+
+Inquiries and Quotations come under pre-sales documents.
+Sales Orders − that are placed by customers.
+Outline agreement − includes contracts and scheduling documents.
+Post sales documents − includes customer feedbacks on delivered products and complaints, free replacements and return products, etc.
+
+Types of Sales Orders
+Cash Sales
+This is defined as an order type, where the customer places an order, picks up the order and pays for the goods. In this order type, delivery of the order is executed immediately, when the order has been entered. Cash invoice and billing can be printed immediately from the order. No receivables are entered for customer as invoice amount is paid in cash and directly entered to a cash account.
+Rush Order
+In this order type, delivery of goods is picked by the customer or you deliver the goods on the same day, when the order is placed.
+Scheduling Agreement
+A scheduling agreement is defined as an external agreement with the customer having details of quantity of goods and delivery dates. This information is mentioned as schedule lines in a standard system. These schedule lines can be created with the scheduling agreement or you can also create these at a later stage. The deliveries are processed for a scheduling agreement in similar way it is processed for a normal delivery. Once the delivery is done, system updates the delivered quantity in the scheduling agreement.
+Consignment Fill-up
+In this sales order type, goods are produced and moved to a warehouse or provided to an agent to deliver to end customer.
+Consignment Issue
+In this order type, whenever there is requirement from a customer, he will move to the warehouse or contact the agent and this will be treated as a sale.
+Third-Party Order
+In a third-party order type, products are not delivered to the customer and then you have to handover the order to a third-party vendor, who is responsible to deliver the items to the customer and generate the bill.
+
+ 
+ 
+  
+
+
+
+					
+
+

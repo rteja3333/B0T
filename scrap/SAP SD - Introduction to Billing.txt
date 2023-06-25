@@ -1,0 +1,75 @@
+
+Billing contains the following components −
+
+Credit and Debit memos for return goods.
+Invoice creation for delivery and services.
+Cancel Billing transactions.
+Pricing Functions.
+Discount and Rebates.
+Transferring billing data to Financial Accounting FI.
+
+Billing is closely integrated with organization structure and it can be assigned to Sales Organization, a Distribution Channel, and a division.
+Key functions in Billing − 
+
+Types of Billing
+Match codes
+Number Range
+Blocking Reasons
+Display billing list
+Display billing due list
+
+Billing Document Types
+A billing document is created for a credit memo, debit memo, an invoice or a cancelled transaction. Each billing document has a header and list of items under it. Billing documents are normally controlled by the billing type.
+In a billing document header, it contains general data like −
+
+Date of Billing
+Payer identification number
+Billing value
+Currency
+Partner Identification numbers like ship to party, sold to party, etc.
+Pricing Elements
+
+In the list of items, you should maintain the following data −
+
+Material Number
+Quantity of goods
+Volume and weight
+Value of Individual items
+Pricing element for individual items
+
+While doing the billing processing, you create, change and delete the billing documents like − invoices, credit memos, debit memos, etc.
+Billing Processing also includes creation of billing documents as per the below reference −
+
+To a sales order
+To a delivery
+To external transactions
+
+You can refer to an entire document, individual items or partial quantities of items.
+A Billing document can be created in the following ways −
+
+When a system processes a billing due list automatically as a background task.
+By manually processing from a worklist.
+You can also create a billing document explicitly
+
+Creation of Billing Documents
+Use T-Code: VF01
+Go to Logistics → Sales and Distribution → Billing → Billing Document → Create.
+
+A new window will open, then you can enter the Billing Type, Date and enter the document number you want to create. Click save.
+
+
+VF02 − To change the Billing Document
+VF03 − Display Billing Document
+VF11 − Cancel a Billing Document
+VF05 − List Billing Document
+
+
+ 
+ 
+  
+
+
+
+					
+
+

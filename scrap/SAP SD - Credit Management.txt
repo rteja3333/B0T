@@ -1,0 +1,60 @@
+
+Example
+A customer’s credit limit is set as 10000 and he makes an order worth 6000 and payment term of 30 days at 4%. Now if payment is made within 30 days, customer will get 4% discount on the payment.
+Why do we need Credit Management?
+Credit management allows you to reduce the credit risk by setting up the credit limit for the customers. You can get warning alerts for a customer or a group of customers.
+Key Features of Credit Management
+As per your credit needs, you can define your various credit policies as per different criteria. This also allows you to define key points in Sales and Distribution system, where the system checks are performed.
+While processing an order, the system allows a representative to get the information about customer’s credit details. When a customer is about to reach his credit limit. An electronic email can be sent to the customer automatically. The credit representative in your company has an option to review the credit situation of a customer quickly and accurately and to decide if to extend the credit limit or not.
+Types of Credit Management
+There are two types of credit management −
+
+Simple Credit Check
+Automatic Credit Check
+
+Simple credit check involves comparing customer credit limit to the total of all items and open item values in the order.
+Credit Limit = Open item values + Value of current Sales Order
+Open items are defined as the products that are invoiced to the customer, but payment has not been received yet. You can configure the system in such a way that it sends a warning message to the customer, when their credit limit is exceeded.
+Automatic Credit Check involves checking open items and open deliveries of goods as well. If the credit limit is crossed, a customer can still make the order because of a good payment history with the company. This can be defined as − Static and dynamic credit check.
+Static Credit Limit Determination
+Types of checking groups − Sales, Delivery and Good Issue. You can block the order at all these levels.
+Risk Category − It is used to determine how much credit has to be given to the customer.
+
+High Risk − Low Credit
+Low Risk − More Credit
+Medium Risk − Average Credit
+
+Dynamic Credit Limit Determination
+It is used to determine the credit limit of their customer by considering a horizon period −
+
+Open Document
+Open Deliveries
+Open Billings
+Open Items
+Horizon Period
+
+Now if the horizon period is defined as 4 months, the system will not consider these documents for 4 months.
+Assigning Company Code to Credit Control Area
+SPRO → IMG → Enterprise Structure → Assignment → Financial Accounting → Assign company code to credit control area
+
+A new window will open, then you can set the automatic credit check.
+
+Defining Credit Groups
+Go to: SPRO → IMG → Sales and Distribution → Basic Functions → Credit Management/Risk Management → Define Credit Groups
+The following credit groups are defined in a SAP system −
+
+Credit group for sales order
+Credit group for deliveries
+Credit Group for goods issue
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

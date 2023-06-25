@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Recording</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+        <style>
+            body {
+                position: relative;
+                min-height: 100vh;
+            }
+    
+            #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: #f5f5f5;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            #content {
+                padding-top: 60px; /* Adjust the top padding to push the content further below */
+            }
+    
+            #transcription {
+                margin-top: 40px; /* Adjust the margin-top value as needed */
+                text-align: center;
+            }
+    
+            #transcription h3 {
+                margin-bottom: 10px;
+            }
+    
+            #transcription p {
+                white-space: pre-wrap;
+                font-size: 16px; /* Adjust the font-size as needed */
+                color: #333; /* Adjust the text color as needed */
+            }
+    
+            #button-container {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f5f5f5;
+                padding: 10px;
+            }
+    
+            #record-button,
+            #stop-button {
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>CHAT NTT</h1>
+        </div>
+    
+        <div id="content">
+            {% if transcription %}
+            <div id="transcription">
+                <h5>Sales order data:</h5>
+                <p>{{ transcription }}</p>
+            </div>
+            {% endif %}
+        
+            <div id="content">
+                {% if sales_order %}
+                <div id="sales-order">
+                    <h3>Sales Order:</h3>
+                    {% if sales_order.order_type %}
+                    <p>Order Type: {{ sales_order.order_type }}</p>
+                    {% endif %}
+                    {% if sales_order.sales_organization %}
+                    <p>Sales Organization: {{ sales_order.sales_organization }}</p>
+                    {% endif %}
+                    {% if sales_order.distribution_channel %}
+                    <p>Distribution Channel: {{ sales_order.distribution_channel }}</p>
+                    {% endif %}
+                    {% if sales_order.sold_to_party %}
+                    <p>Sold-To Party: {{ sales_order.sold_to_party }}</p>
+                    {% endif %}
+                    {% if sales_order.ship_to_party %}
+                    <p>Ship-To Party: {{ sales_order.ship_to_party }}</p>
+                    {% endif %}
+                    {% if sales_order.po_reference_number %}
+                    <p>PO Reference Number: {{ sales_order.po_reference_number }}</p>
+                    {% endif %}
+                    {% if sales_order.order_quantity %}
+                    <p>Order Quantity: {{ sales_order.order_quantity }}</p>
+                    {% endif %}
+                    {% if sales_order.material %}
+                    <p>Material: {{ sales_order.material }}</p>
+                    {% endif %}
+                    {% if sales_order.plant %}
+                    <p>Plant: {{ sales_order.plant }}</p>
+                    {% endif %}
+                    {% if sales_order.storage_location %}
+                    <p>Storage Location: {{ sales_order.storage_location }}</p>
+                    {% endif %}
+                </div>
+                {% endif %}
+        
+    
+        <div id="button-container">
+            <button id="record-button" class="btn btn-primary" onclick="toggleRecording()">Speak</button>
+            <button id="stop-button" class="btn btn-danger" onclick="stopRecording()">Stop</button>
+        </div>
+    </body>
+    
+
+<script>
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    async function toggleRecording() {
+        if (!mediaRecorder || mediaRecorder.state === 'inactive') {
+            startRecording();
+            document.getElementById('record-button').innerText = 'Recording...';
+            document.getElementById('stop-button').disabled = false;
+        }
+        else {
+            stopRecording();
+            document.getElementById('record-button').innerText = 'Speak';
+            document.getElementById('stop-button').disabled = true;
+        }
+    }
+
+    function redirectToTranscription() {
+        window.location.href = '/transcription';
+    }
+
+    function handleDataAvailable(e) {
+        recordedChunks=[]
+        recordedChunks.push(e.data);
+        uploadAudio();
+
+    }
+
+     function startRecording() {
+        navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+            .then(stream => {
+                mediaRecorder = new MediaRecorder(stream);
+                mediaRecorder.addEventListener('dataavailable', handleDataAvailable);
+
+                mediaRecorder.start();
+
+            })
+            .catch(console.error);
+    }
+
+     function stopRecording() {
+        mediaRecorder.stop();
+        document.getElementById('record-button').innerText = 'Speak';
+        document.getElementById('stop-button').disabled = true;
+        setTimeout(redirectToTranscription, 15000); // Wait for *1000 seconds before redirecting
+    }
+
+
+
+     function uploadAudio() {
+        const blob = new Blob(recordedChunks, { type: 'audio/wav' });
+        const formData = new FormData();
+        formData.append('audio', blob, 'recording.wav');
+
+        $.ajax({
+            type: 'POST',
+            url: '/upload-audio',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.error(error);
+            }
+            
+        });
+    }
+
+</script>
+</body>
+</html>

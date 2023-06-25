@@ -1,0 +1,20 @@
+
+Movement Type: 501 − this is used for receiving goods with a Purchase Order.
+
+A new window will open. Enter the document date, Plant and storage location, Movement type, etc.
+
+Select the Movement type from the list and Press Enter after selecting all the details.
+
+A new window will open. Enter the material code and quantity for which stock needs to be created and then click Save.
+
+A message Document 300045646 posted will be displayed.
+
+ 
+ 
+  
+
+
+
+					
+
+

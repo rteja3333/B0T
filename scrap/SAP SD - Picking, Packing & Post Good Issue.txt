@@ -1,0 +1,60 @@
+
+There are three types of Picking −
+
+Picking of goods individually
+Picking as per defined intervals
+Automatic Picking in SAP SD module
+
+Packing of goods is done with the packing material and to be created as material type − VERP. This can be done in two ways −
+
+Manual
+Automatic
+
+The Post Good Issue (PGI) is the last step in delivery processing and in this goods ownership is moved to the customer and stock is updated as per delivery.
+These functions can be performed in the system using the following steps −
+
+Creating an Outbound delivery
+Creating Picking Request
+Create Packaging
+Creating Post Goods Issue
+
+Creating an Outbound Delivery
+Use T-Code: VL01N
+
+Click save.
+Creating a Picking Request
+Use T-Code: LT03
+
+Enter Warehouse #
+Enter Plant
+Enter Delivery
+Press Enter.
+
+
+Click save.
+Creating a Packing Request
+Use T-Code: VL02N
+Enter Outbound Delivery and click Pack.
+
+Select Pack Material and Enter Packaging Material details.
+
+Click save.
+Post Good Issue PGI
+T-Code: VL02N
+
+Click Post Good Issue and a message will appear − Replenishment Delivery has been saved.
+PGI creates two documents −
+
+Material Document
+Accounting Document
+
+
+ 
+ 
+  
+
+
+
+					
+
+

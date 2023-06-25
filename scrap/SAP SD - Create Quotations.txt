@@ -1,0 +1,26 @@
+
+SAP R/3 Menu − Logistics → Sales and Distribution → Sales → Quotation → Create T-Code: VA21
+
+Enter the Quotation Type, then you can enter the Sales Organization, Distribution Channel, Division and then click Create with Reference.
+
+A new window will open, then enter the Inquiry number and click Copy. It will fetch all the details from that Inquiry document.
+
+Then another new window will open. Enter the following details −
+
+Enter Partner Function, Sold-To-Party, Ship-To-Party
+Enter Purchase Order #
+Enter Valid from and Valid to Date
+Enter Quantity of material
+
+
+After this, click save. A Message will be displayed Quotation 40000047 has been saved.
+
+ 
+ 
+  
+
+
+
+					
+
+

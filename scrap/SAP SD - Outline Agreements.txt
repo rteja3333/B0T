@@ -1,0 +1,63 @@
+
+
+An outline agreement is a long term purchasing agreement with the vendor. It contains the terms and conditions regarding the material that is to be supplied by the vendor.
+These outline agreements are valid up to a certain period of time and cover a certain predefined quantity or value.
+
+An Outline agreement is of two types, which includes − Contract and a Scheduling Agreement.
+Contract Agreement
+A Contract is basically a long term outline agreement between the vendor and the ordering party. It is made on predefined material or services to be given over a certain framework of time.
+There are two types of contract −
+
+Quantity Contract − In this type of contract, the overall value is specified in terms of total quantity of material to be supplied by vendor.
+Value Contract − In this contract type, the overall value is specified in terms of total amount to be paid for that material to the vendor.
+
+A Contract can be created by following the steps shown below −
+Path to Create Contract
+Logistics → Materials Management → Purchasing → Outline Agreement → Contract → Create.
+T-code: ME31K
+On the SAP Menu screen, select Create execute icon by following the above path.
+
+Then, provide the name of vendor, type of contract, purchasing organization, purchasing group and plant along with the agreement date.
+
+Fill in all the necessary details like agreement validity start date, end date, and pay terms (i.e. terms of payment).
+
+Then provide the material number along with target quantity. If the quantity contract or net price of value contract and material group. Click save. A new Contract will be created.
+
+Scheduling Agreement
+A Scheduling Agreement is a long term outline agreement between the vendor and the ordering party. This is done over a predefined material or service, which are procured on predetermined dates over an already agreed framework of time. A Scheduling agreement can be created by the following two steps − 
+
+Creating scheduling agreement
+Maintain scheduling lines for the agreement
+
+Creating a Scheduling Agreement
+This can be created by following the steps shown below.
+The path to create a Scheduling Agreement − Logistics → Materials Management → Purchasing → Outline Agreement → Scheduling Agreement → Create → Vendor Known.
+T-code: ME31L
+On the SAP Menu screen, select Create execute icon by following the above step.
+
+Provide the name of that vendor, agreement type (LP for scheduling agreement), purchasing organization, purchasing group, plant along with agreement date.
+
+Fill in all the necessary details like agreement validity start date, end date, payment terms.
+
+Provide material number along with target quantity, net price, currency and material group. Click save. A new Scheduling Agreement will be created.
+
+Maintain scheduling lines for the agreement
+These schedule lines can be maintained for scheduling agreement by following these steps −
+Path to maintain Schedule Lines − Logistics → Materials Management → Purchasing → Outline Agreement → Scheduling Agreement → Delivery Schedule → Maintain.
+On a SAP Menu screen, select Maintain execute icon by following the above step.
+
+Provide a Scheduling Agreement number. Select line item. Go to the Item tab at the top → Select Delivery schedule.
+
+
+Provide a delivery schedule date and target quantity. Click save. The schedule lines are now maintained for the scheduling agreement.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

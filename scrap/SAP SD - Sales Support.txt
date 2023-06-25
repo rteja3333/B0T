@@ -1,0 +1,28 @@
+
+This SAP SD Sales support module provides an option of creating an email list of the customers and directly sending mails for new leads. The sales support stores all the data pertaining to the sales and distribution related to customers, products, materials, competitor products, etc.
+
+SAP Sales Support Tables
+
+VBKA
+TKSF
+TVC6
+TVC5
+
+SAP Sales Support Transaction Codes
+
+VC01
+OV4Z
+VC05
+VC00
+VOC1
+
+
+ 
+ 
+  
+
+
+
+					
+
+

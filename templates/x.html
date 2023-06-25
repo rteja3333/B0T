@@ -1,0 +1,81 @@
+
+model = whisper.load_model("base")
+result = model.transcribe("audio.wav")
+print(result["text"])
+
+
+    {% comment %} <script>
+        function displayTranscription(transcription) {
+            var transcriptionDiv = document.getElementById('transcription');
+            var transcriptionText = document.getElementById('transcription-text');
+            transcriptionText.innerText = transcription;
+            transcriptionDiv.style.display = 'block';
+        }
+
+        $(document).ready(function() {
+            $.ajaxSetup({ cache: false });
+            setInterval(function() {
+                $.get('/transcription', function(transcription) {
+                    if (transcription) {
+                        displayTranscription(transcription);
+                    }
+                });
+            }, 1000);
+        });
+    </script> {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    frist save : 
+
+    from flask import Flask, request, render_template
+
+# from inputaudiototext import converttotext
+import whisper
+model = whisper.load_model("base")
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('saving.html',transcription="Testing")
+
+@app.route('/upload-audio', methods=['POST','GET'])
+def upload_audio():
+    
+    audio_file = request.files['audio']
+    # Save the audio file to a desired location
+    audio_file.save('audio.wav')
+
+    text_from_audio = model.transcribe("audio.wav")   
+    transcription = text_from_audio["text"]
+    
+    global transcription_data
+
+    
+    transcription_data = transcription
+    
+    print(transcription)
+    return render_template('saving.html',transcription="Test-2 which is to be displayed")
+
+
+@app.route('/transcription')
+def get_transcription():
+        return render_template('saving.html',transcription=transcription_data)
+
+if __name__ == '__main__':
+    app.run(debug=True)

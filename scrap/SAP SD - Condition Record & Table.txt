@@ -1,0 +1,29 @@
+
+Example of a Condition Record − Entering the price of a product or to specify the discount for a privileged customer.
+Example of a Condition Table − Condition records for a customer specific material prices are stored by a sales department. SAP system contains a conditional table 005 for this purpose. Key of table 005 includes the following field −
+
+Customer
+Material
+Sales Organization
+Distribution Channel
+
+In the first two fields, the customer and material determines the relationship between customers and specific materials. The last two fields are used to identify organization data in a SAP system. Now, if sales department in an organization enters a condition record for discount to one privileged customer, the system will automatically make use of the condition table 005 to store the record and define a key. Any standard SAP system contains predefined condition tables and specifies for each access in a predefined access sequence.
+Creating Condition Tables
+In a SAP system, you can create or change existing condition tables. As per the new business requirement in an organization, you can create new condition tables.
+Go to SPRO → IMG → Sales and Distribution → Basic Functions → Pricing → Pricing Control → Define Conditional Tables
+
+A new window will open and then you can select from create, change or display field as per the requirement. To create a new table, you have to select create and click on Choose.
+
+Enter condition table in table field and then you can enter the existing table to copy the condition.
+
+Once data is copied, you can modify the table as per the business requirement.
+
+ 
+ 
+  
+
+
+
+					
+
+

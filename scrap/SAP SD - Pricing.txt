@@ -1,0 +1,24 @@
+
+Example
+Consider a case when customer orders specific quantity of a product on a particular day. Various factors like customer, product, order quantity and date tells the final price to that customer. This information is stored in the system as master data in the form of condition records.
+There are various pricing elements like prices, surcharges, discounts, and taxes, which are defined in SAP system as condition types. To manage pricing information for a pricing element in a system, you have to create condition records.
+Manual Pricing
+While processing a sales order, you can also manipulate the pricing at the item as well as the header level. Manual processing of a price screen is dependent on individual condition types. During a Sales Order processing using manual processing for a condition type, you can perform the below activities −
+
+Deleting the pricing element.
+Changing a condition amount.
+Entering additional pricing elements.
+
+How to add Pricing elements manually?
+If you want to add customer discount manually in the pricing screen of a sales order, click on Add line. In Data screen, you can enter additional conditions like – customer discount in the condition type field. Enter a percentage range and then press ENTER. You can also delete pricing elements in item pricing and header screens. To do this, select the particular condition by positioning the cursor and click on delete line.
+Note that all header conditions defined at header level cannot be changed at the item level, and conditions defined at this level cannot be changed at the header level. Only the Conditions that you define at both header and item conditions can only be edited at both levels.
+
+ 
+ 
+  
+
+
+
+					
+
+

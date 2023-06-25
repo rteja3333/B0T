@@ -1,0 +1,61 @@
+
+There are two types of pre-sales activities in Sales and Distribution −
+Inquiries
+Inquiries are the inquiries received from customers like, if a product is available, costing of product, delivery of a product, etc.
+Different T-Codes
+
+VA11 − Create Inquiry Logistics → Sales and Distribution → Sales → Inquiry → Create.
+VA12 − Change Inquiry
+VA13 − Display/Search Inquiry
+
+Quotation
+A quotation is a legal document to the customer for delivery of goods and services.
+Different T-Codes
+
+VA21 − Create Quotation
+VA22 − Change Quotation
+VA23 − Display/Search Quotation
+
+In this chapter, we will see how to create inquiries in SAP SD.
+Create Inquiries
+An Inquiry is not a legal document and is used to record the information about delivery or services from customers. The information that is captured using an inquiry is related to materials and quality of goods.
+Menu Path: Logistics → Sales and Distribution → Sales → Inquiry → Create T-Code: VA11
+When you run this T-code, you need to fill the below information to create an inquiry.
+
+
+Field
+Data
+
+
+Inquiry type
+ZEC 1 (IECPP inquiry)
+
+
+Sales organization
+4000
+
+
+Distribution channel
+40
+
+
+Division
+00
+
+
+
+Enter Inquiry Type as IN and Organizational Data as below and then click Sales.
+
+The Sales Office is an optional entry, which helps in reporting. Then a new window will open. Enter Partner Function (Sold-To-Party/Ship-To-Party). Enter the material code and quantity and then Click Save.
+
+A Message − Inquiry 10000037 has been saved will be displayed.
+
+ 
+ 
+  
+
+
+
+					
+
+

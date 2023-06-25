@@ -1,0 +1,120 @@
+
+You can use the following billing method types −
+
+Individual Billing per sales document.
+Collective Billing method for multiple sales document.
+Invoice Split for several billing documents for one or more sales document.
+
+In Individual Billing method, you can make the setting in system to create single billing document for each sales document. Example: One invoice per delivery.
+In Collective Billing, it allows you to combine different documents like sales orders and/or deliveries either partially or fully in a common billing document.
+Invoice Splits allow you to create invoices as per the specific criteria.
+Billing Plan
+A billing plan in SAP SD is defined as a plan with individual billing dates for goods and services and it doesn’t depend on the delivery of goods. Using this bill plan, you can bill for a service or product at regular time intervals or at specific dates defined in the system in advance.
+As per the business transactions, a system allows you to process any of the billing plan type. There are two types of billing plan −
+
+Milestone Billing
+Periodic Billing
+
+Milestone billing includes dividing the total billed amount in multiple billing dates that are defined in a billing plan. When there is a milestone reached as per defined in the system, customer is charged as per the project cost or a predefined amount as per the bill plan. Milestone billing is normally used for long term projects.
+Periodic billing includes charging of bill amount at a regular interval of time. Example: Suppose you have to pay a rental amount monthly as per the contract. The system can process monthly payment as per the schedule. Periodic billing plan is normally used in the following categories −
+
+For a Service like Annual Maintenance contracts, etc.
+For lease agreements.
+Intellectual Property Management.
+
+Assigning Billing Plans to Business Transactions
+In SAP system, you can mention if one billing plan is applicable for all the products in a business transaction or you can define separate bill plans for each transaction goods as per the requirement.
+Note that you can define a billing plan in SAP CRM system − Customer Relationship Management → Transactions → Basic Settings → Billing Plan
+You cannot use billing plans created in SAP CRM system in SAP ERP system.
+Revenue Account Determination
+Revenue account is used for revenue recognition and is used for integrating SAP SD module and Finance Accounting module. As per the billing document to account, system determines the correct G/L account for posting the revenue as per the revenue account determination.
+To configure Revenue Account Determination: Use T-Code: OVK5
+OR
+Go to SPRO → IMG → Sales and Distribution → Basic Function → Account Assignment/Costing → Revenue Account Determination → Check Master data relevant for Determination.
+
+Using this, you can define −
+
+Account Assignment for Materials
+Account Assignment for Customers
+
+Select any one of them and click Choose.
+
+Materials − Account Assignment Groups − Using this option, you can divide materials into different groups, services and retails groups. You maintain this in Material Master MM01/MM02 under Sales → Sales Org 2 view.
+Customers − Account Assignment Groups − Using this option, you can divide customer into different groups. Example: You can divide customers into domestic customers and non-domestic or overseas. You maintain this in Payer Customer Master using VD01/XD01/VD02/XD02 under billing document tab of Sales Area Data.
+To create and display the condition table for revenue account determination −
+Go to SPRO → IMG → SD → Basic Function → Account Assignment → Account Assignment/Costing → Revenue Account Determination → Define dependency of Revenue Account Determination → Execute.
+
+A new window will open, then you can select the relevant option related to the condition table and click Choose.
+
+The following T-Codes can be used for managing condition tables
+
+
+S.No.
+TCode &amp; Description
+
+
+1
+
+V/12
+Account Determination : Create tables
+
+
+
+2
+
+V/13
+Account Determination : Change table
+
+
+
+3
+
+V/14
+Account determination : display tables
+
+
+
+4
+
+OV25
+Field catalog : Allowed fields for the tables
+
+
+
+The next step is to define access sequence and account determination type.
+Define and Assign Account Determination Procedure −
+
+The first step is to define and assign an account key and then
+Assignment of General Ledger account.
+
+Useful Structure in Revenue Account Determination −
+
+
+S.No
+Structure &amp; Description
+
+
+1
+
+KOMKCV
+Account Determination Communication Header
+
+
+
+2
+
+KOMPCV
+Account Determination Communication Item
+
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

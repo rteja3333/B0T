@@ -1,0 +1,28 @@
+
+The key points about quota arrangement are as follows −
+Quota arrangement divides the total requirement of material among certain sources of supply, i.e. vendors and then assigns quota to each source. This particular quota specifies the portion of material that is to be procured from this assigned vendor or source. Quota rating is used to determine the amount of material that is to be assigned to a particular source or vendor. The source with lowest quota rating represents the valid source.
+Quota rating can be calculated by the following formula −
+Quota rating = (Quota Allocated Quantity + Quota Base Quantity)/Quota
+Where the Quota Allocated Quantity is the total quantity from all orders that are procured from a particular source. Quota Base Quantity is the quantity from a new source of supply. Quota is the total requirement of material that is given to a particular source of supply.
+The mandatory setting before creating quota is – information record and source list should be maintained for the particular material. Also, in the material master, the source list and quota arrangement usage check box should be checked. This setting can be made in the material master by going to T-Code MM03. In the purchasing view, check the quota arrangement usage and source list. Setting is now maintained for quota arrangement.
+
+Create Quota Arrangement
+Quota arrangement divides the total requirement of a material among certain sources of supply i.e. vendors. Quota arrangement can be created by following the steps shown below.
+Path to create Quota Arrangement − Logistics → Materials Management → Purchasing → Master Data → Quota Arrangement → Maintain.
+T-Code: MEQ1
+On the Sap Menu screen, select Maintain execute icon by following the above step.
+
+Enter the material number and plant for which quota arrangement needs to be maintained.
+
+Enter the names of the vendor’s along with all the assigned and allocated quantity to them. Click save. Quota arrangement is now maintained for this particular material.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

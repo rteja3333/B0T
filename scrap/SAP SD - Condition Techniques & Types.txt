@@ -1,0 +1,110 @@
+
+Example
+Condition type allows you to define the discount for special material. This can be specified in the system to calculate discount as an amount or it can calculate discount in terms of percentage. In case you have to use both discount types, two separate condition types have to be defined in the system.
+There are predefined condition types in a standard system −
+
+
+S.No
+Condition Type &amp; Description
+
+
+1
+
+PR00
+Price
+
+
+
+2
+
+K004
+Material Discount
+
+
+
+3
+
+K005
+Customer-specific material discount
+
+
+
+4
+
+K007
+Customer discount
+
+
+
+5
+
+K020
+Price group discount
+
+
+
+6
+
+KF00
+Freight surcharge(by item)
+
+
+
+7
+
+UTX1
+State tax
+
+
+
+8
+
+UTX2
+Country tax
+
+
+
+9
+
+UTX3
+City tax
+
+
+
+How to create or change an existing condition type in a system?
+You can change or maintain existing condition type in a standard system. You can also create a new condition types as per business requirements in your organization.
+Go to SPRO → IMG → Sales and Distribution → Basic Functions → Pricing → Pricing Control → Define Condition Types
+
+A new window will open. Select maintain and then change as per the requirement and click on Choose.
+
+Once you select Maintain Condition Types and click on Choose, a new window will open. Select a condition type and click on copy.
+
+Enter the name of condition type. Fill the details for Control Data −
+
+Condition Class (A, B, D, E)
+Condition Type (A-Percentage, B- Amount, C, G)
+Condition Category (Cost, Price, etc.)
+Rounding rule (Commercial, round up, round down)
+Structure Condition
+Plus/Minus
+
+
+Group Condition data
+
+Changes which can be made
+
+Master Data Section
+
+Scale and Control Data 2 section
+
+Once all the details are entered, click on the save icon at the top.
+
+ 
+ 
+  
+
+
+
+					
+
+

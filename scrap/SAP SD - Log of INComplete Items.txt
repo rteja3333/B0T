@@ -1,0 +1,59 @@
+
+The following entries can be made to the system for incomplete data −
+
+Header Data of a Sales document
+Item Data of a Sales Document
+Schedule Line Data of Sales Document
+Sales Activity Data
+Partner Data
+Delivery Header Data
+Delivery Item Data
+
+Use T-Code: OVA2 or the below menu path to display the incomplete group −
+SPRO → IMG → Sales and Distribution → Basic Functions → log of incomplete item → Define Incompleteness Procedure → Execute
+
+A new window will now open and you can check the list of this incomplete group.
+
+To assign incompletion procedures to each document type. You can use T-Code: VUA2 or SPRO → IMG → Sales and Distribution → Basic Functions → log of incomplete item → Assign Incompleteness procedure.
+
+Then a new window will open. Please select Assign procedures to Sales Document Type.
+
+You can now view document configuration using a VOV8, but it can only be changed here. If you don’t want to populate a procedure cos of an incomplete field, you can select IC check box.
+
+Important T-Codes to be used for this
+
+OVA2 − To define incompletion procedure.
+VUA4 − To assign incompletion procedure to delivery type.
+VUPA − To assign incompletion procedure to Partner functions.
+VUC2 − To assign incompletion procedure to Sales Activities.
+OVA0 − To define Status groups.
+VUA2 − To assign incompletion procedure to Sales Document Header.
+V.02 − Execute to get a checklist of incomplete sales orders.
+VUA2 − To set a warning or error message on document save.
+VUP2 − To assign incompletion procedure to Sales item category.
+VUE2 − To assign incompletion procedure to Schedule line category.
+
+Key tables to check Incompletion Logs
+
+VBUV − Incompletion log - Sales documents
+VBUK − Header incompletion
+TVUVG − Groups
+V50UC − Incompletion log − Deliveries
+V50UC_USER − Incompletion log − Deliveries − Enhancements
+TVUV − Procedures
+TVUVF − Fields
+TVUVS − Status groups
+VBUP − Item incompletion
+TVUVFC − Fcodes
+FMII1 − Funds Management Account Assignment Data
+
+
+ 
+ 
+  
+
+
+
+					
+
+

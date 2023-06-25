@@ -1,0 +1,26 @@
+
+
+Credit Memo
+Debit Memo
+Standard Order
+Delivery Returns, etc.
+
+To define a Sales Document − Enter T-Code: VOV8 or SPRO → IMG → Sales and Distribution → Sales → Sales Document → Sales Document Header → Define Sales Document Type.
+
+A new window will open, go to New entries.
+
+Then you can enter the mandatory fields in this new window.
+
+
+
+Click the save icon at the top.
+
+ 
+ 
+  
+
+
+
+					
+
+

@@ -1,0 +1,34 @@
+
+Following are some checklist points to be carried out when a delivery is created −
+
+To check the material and order to ensure if the outbound delivery of goods is possible.
+Defining the quantity of goods and its availability.
+Packing the outbound delivery.
+Calculating weight or volume of delivery.
+Find out the delivery situation and the delivery agreement.
+Defining the route.
+Finding the pickup location.
+Quality check of material to be delivered.
+Updating and changing the status of the sales order.
+
+If there is a change in a delivery situation, you can change the delivery after it is created.
+How to create an Outbound Delivery?
+If you know the order number, you can create one outbound delivery for a single order. You can change the shipping data at any point, if required.
+Use T-Code: VL10B
+
+Enter the Shipping Point from shipping data. In the Purchase Order tab, enter PO number due for delivery and quantity.
+
+To create an outbound delivery with Order Ref or W/O Order Reference, use T-Code: VL01N
+
+To change the outbound delivery, Use T-Code: VL02N
+
+
+ 
+ 
+  
+
+
+
+					
+
+

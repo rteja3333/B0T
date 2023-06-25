@@ -1,0 +1,21 @@
+
+Client
+A client is an independent organizational unit and legal unit. Generic data and multiple tables are saved at client level for multiple organizational structure. Client is known at the top level in an enterprise structure. You can assign multiple company codes to a client.
+Company Code
+A company code is defined as an independent legal unit in an organization. Company code is an organizational unit created in Finance Accounting. At the company code level, you can create P/L statements and Balance sheets. You can assign multiple company codes to a client.
+Sales Organization
+A Sales organization is used to distribute products and services. You can assign a single or multiple sales organization to a company code. You can assign one or more Plant to Sales organization and it is not unique, so you can have one plant assigned to multiple Sales organizations. Sales organizations can be used to perform search criteria to list sales documents and to create deliveries and billing worklist. You can mention different output types for sales and billing document for each sales organization.
+Distribution Channel
+It is defined as a medium, which is used to send goods and services to the customer. You can assign a distribution channel to a single or many Sales Organizations. You can set distribution channel as per company’s market policy or as per an internal organization. You can use master data in one distribution channel to other distribution channel. You can assign a sales office to a distribution channel.
+Division
+A division is defined as a product line or grouping of services or material. You can assign a division to one or more sales organization. A product is always assigned to one division. You can assign a Sales Office to a division. There are various organization units like Sales Area, Warehouse, delivery point, shipping point etc. that can be mapped to one or more SAP modules.
+
+ 
+ 
+  
+
+
+
+					
+
+

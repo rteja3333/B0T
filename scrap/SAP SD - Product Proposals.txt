@@ -1,0 +1,20 @@
+
+An Automatic Product Proposal is one of the most powerful tool used in online marketing of products. Product Proposals can be mapped to specific requirement of business partners to match their market requirement. You can use Top n Product list to provide the list of products proposed. The data in a product proposal is integrated with SAP CRM module to get product master data.
+A Product proposal also supports features like cross selling, up selling and down selling, Top N Product list, proposing accessories for specific products and generating product proposals with respect to specific promotions.
+
+Cross Selling − The product association rules are defined for products and relationship between different products. Each rule contains a leading product and the dependent products to be suggested with these products. This allows you to offer other products with the one already added by a customer.
+Up-Selling and Down Selling − If you are selling a specific product you can define other products to be proposed. These proposed products are defined using down selling and up selling rules.
+Top N Product Lists − With the use of SAP NetWeaver BI component, you can define a list of top products for a target group.
+Proposing Accessories − This is maintained in the product master data and with already added products. It suggests suitable accessories that can be added.
+Generating Product Proposal w.r.t specific promotions − You can assign a specific product to a promotion for a customer.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

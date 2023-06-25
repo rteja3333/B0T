@@ -1,0 +1,35 @@
+
+
+Sales Order Processing
+Creation of Sales Order with Reference
+Item Categories
+Schedule Lines Categories
+Copy Control
+Log of Incomplete Items
+
+In this chapter, we will discuss how to process sales orders in SAP SD.
+Sales Order Processing
+Sales order processing describes a function related to the wholesale part of an organizational business.
+The most common functions under the sales order processing are −
+
+Availability of the articles purchased.
+Checking for incomplete data.
+Checking the status of the sales transaction.
+Calculation of pricing and taxes.
+Schedule the deliveries of goods.
+Printing of documents or e-transfer of documents.
+
+All these functions can be configured automatically or manually as per the system configuration. The data from these functions is stored in a sales document and can be changed manually during the processing. A sales document can be a single document or can be part of a series consisting of interrelated documents.
+Example
+There is a customer telephone inquiry in the system. Then the customer requests a quotation, which can be created by referring to the same inquiry. Next, assume that the customer places an order on the basis of that quotation and a sales order is created by copying the information from this quotation and if at all there are any modifications that are required. The merchandise is then shipped and the bill is sent to this customer. After the delivery of goods, this customer raises a claim of damaged articles. Then a delivery can be created free of charge with reference to the sales order.
+All these sales documents − starting with the inquiry, quotation, raising a sales order, delivery of goods, billing document to customer and the free of charge delivery forms a document flow. The data flow from one document to another removes or decreases the practice of manual processing and helps in simpler problem resolution.
+
+ 
+ 
+  
+
+
+
+					
+
+

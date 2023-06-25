@@ -1,0 +1,64 @@
+
+You can define different schedule line categories as per the sales document type and item category. The various control elements related to general data and shipping data are used for categorizing schedule lines. You can also define new schedule lines and the system administrator manages data related to control elements.
+General Data Control Elements
+
+If an availability check is carried out in system?
+Is it a schedule line for a return item?
+Whether a customer request is posted to purchase department?
+
+Shipping Data Control Elements
+
+If a delivery block is set automatically for a defined schedule line?
+Is the schedule line relevant for delivery?
+
+The categorization of schedule line majorly varies as per the item category of a corresponding item and the material requirement planning MRP. This is defined in the material master record. The categories for a schedule line are defined automatically as per their values in the corresponding table. In case if it is required, you can do some manual changes to the values in the sales document, but can’t change all the values.
+How to Define Schedule Line Categories?
+It can be defined in the following ways −
+
+You can copy an existing schedule line category and make changes as per the requirement.
+Changes can be made to the existing schedule line category.
+Creation of a new schedule line category.
+
+Schedule Line Categories in different sales document
+Inquiry −
+
+No delivery of an item.
+No availability check.
+Information purpose.
+
+Quotation −
+
+No Delivery.
+No Movement.
+
+Order −
+
+Schedule line is suitable for delivery.
+Movement Type 601.
+
+Return −
+
+Schedule line is suitable for delivery.
+Movement Type 651.
+
+Defining a Schedule line Category −
+T-Code: VOV6
+
+A new window will open, then you can click on New Entries.
+
+
+
+Once the details are entered, then click on the save icon at the top.
+
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

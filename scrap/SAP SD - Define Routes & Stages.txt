@@ -1,0 +1,28 @@
+
+
+A new window will open and it will show the list of existing routes, Click New Entries.
+
+Enter the details in new window along with route stages and define. Once these details are entered click save.
+
+Maintain stages for all routes
+Go to: SPRO → IMG → Logistics Execution → Transportation → Basic Transportation Function → Routes → Define Routes → Maintain Stages for all routes.
+
+Enter the following details −
+
+Route
+Stage Category
+Departure Point
+Destination Point, etc.
+Once done, click save.
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

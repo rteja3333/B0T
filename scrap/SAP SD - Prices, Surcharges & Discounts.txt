@@ -1,0 +1,93 @@
+
+
+Material Price
+Price List Type
+Customer specific price
+
+By default, the system takes gross price in the automatic pricing for a business transaction. In a standard SAP system, system takes customer specific price. If no such price exists, system checks for a valid price list type. If this is also not present in the system, it takes the material price.
+Material Prices
+When material price is created, it means – the price for a specific material or pricing for a specific material type. A combination of sales organization and distribution channel for which material price is valid.
+Price List Types
+As per your business requirement in an organization, you can define your own price list.
+Example − Price list can be created as per the customer type like Retail, Wholesale customer and so on. Price list can also be created as per currency type.
+Customer Specific Prices − You can also create pricing records for specific customers. You can assign pricing record for specific combination of customers and material type.
+Surcharges and Discounts
+A standard SAP system includes a variety of common discount types. You can also define or customize discounts and surcharges as per the business requirement.
+A Standard SAP system includes the below mentioned discount types − 
+
+
+Discount(Key)
+Kind of Discount
+
+
+Customer(K007)
+Percentage
+
+
+Material(K004)
+Absolute
+
+
+Price group(K020)
+Percentage
+
+
+Material group(K029)
+Absolute discount by weight
+
+
+Customer/material(K005)
+Absolute
+
+
+Customer/material group(K030)
+Percentage
+
+
+Price group/material(K032)
+Absolute
+
+
+Price group/material group(K030)
+Percentage
+
+
+Rebate processing(BO01)
+Group rebate(%)
+
+
+Rebate processing(BO02)
+Material rebate(fixed)
+
+
+Rebate processing(BO03)
+Customer rebate(%)
+
+
+Inter-company processing(PI01)
+Intercompany discount(fixed)
+
+
+Inter-company processing(PI02)
+Intercompany discount(%)
+
+
+Invoice lists(RL00)
+Factoring discount
+
+
+Invoice lists(MW15)
+Factoring discount tax
+
+
+While creating a condition record, you can use any of above standard discount types. While doing automatic pricing, system checks for the discount that satisfies a certain condition and it checks for a valid condition record. If a discount refers to a group like a material group or price groups, that particular group must be assigned to a relevant customer or material master record before automatic pricing is done in the system.
+
+ 
+ 
+  
+
+
+
+					
+
+

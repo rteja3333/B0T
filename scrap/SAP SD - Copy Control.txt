@@ -1,0 +1,48 @@
+
+How to find Copy Controls in SAP system?
+These controls are created and configured under IMG and can be found at the following menu path −
+
+SPRO → IMG → Sales and Distribution → Sales → Maintain copy control for sales documents.
+SPRO → IMG → Sales and Distribution → Shipping → Specify copy control for deliveries.
+SPRO → IMG → Sales and Distribution → Billing → Billing Documents → Maintain copy control for billing.
+
+You can also use the following T-Codes to find copy controls in a system −
+
+VTAA − This control is used for copying from sales order to sales order
+VTLA − This control is used control for copying from sales order to delivery
+VTFL − This control is used control for copying from delivery to billing doc
+VTFF − This control is used control for copying from billing doc to billing doc
+VTAF − This control is used control for copying from billing doc to sales order
+VTFA − This control is used control for copying from sales order to billing doc
+
+How Copy Controls work in SAP system?
+You can setup Copy controls in a system at three different levels in a Sales Order −
+
+Header level.
+Item level.
+Schedule line level (Only relevant, when you copy from a sales order to sales order or from billing doc to sales order).
+
+The Header Copy Control routine is required when you copy data from header of a source document to the header of a target document.
+T-Code: VTLA to check copy control between sales order and delivery.
+
+You can check the source of a routing by selecting the routine and press F4. To open it in the ABAP editor, you can press F5. Copy controls for an item can be checked by a double click on the item folder and choosing an item category and then clicking on the Display view item overview screen. You can then use the F1 key to find out how each routine is employed. The target documents will be assigned an updated reference status in the copied item.
+The following types of status can be possible for an item −
+
+Not relevant − it tells if an item is not relevant for copying.
+Not referenced − it tells an item has not been copied.
+Partially referenced − it tells if an item quantity is fully copied.
+Fully referenced − It tells if an entire item quantity has been copied or not and an item cannot be referenced further.
+
+You can also display reference status for a copy control −
+Select the Header → Status for the status of the entire document. This field is used − Field VBUK-RFSTK.
+Select an Item → To find the status of the line item. This field is used − VBUP-RFSTA.
+
+ 
+ 
+  
+
+
+
+					
+
+

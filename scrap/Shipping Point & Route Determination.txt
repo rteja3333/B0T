@@ -1,0 +1,24 @@
+
+While creating a delivery document, its route is determined based on the shipping party and ship to party information.
+How to define Modes of Transport?
+Go to: SPRO → IMG → Logistics Execution → Transportation → Basic Transportation Function → Routes → Define Routes → Define modes of transport → Execute.
+
+A new window will open, Click New Entries.
+
+Enter the following details −
+
+Shipping Type,
+Description, and
+Click save.
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

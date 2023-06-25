@@ -1,0 +1,46 @@
+
+
+
+Group
+Name
+
+
+X001
+Domestic Customers
+
+
+X002
+Export Customers
+
+
+X003
+One Time Customers
+
+
+How to create a Customer Account Group?
+Go to SPRO → SAP Reference IMG → Financial Accounting → AR and AP → Customer Accounts → Master Data → Preparations for creating customer master data → Define Account Groups with screen layout (Customers) → Execute
+
+A new window will open → click New entries.
+
+Then again a new window will open. Enter the following details in it.
+
+Customer Account Group − Enter a 4-digit account group.
+Name − Enter a name under the General data field.
+Field Status − Click on the Company code data.
+
+
+Once you select the field status, a new window will open. Then, select Account Management from the selected group and the click Reconciliation account ‘Req. Entry’
+
+
+
+Once this is done, click Save to save this configuration. Similarly, you can also create X002, X003 for other customers.
+
+ 
+ 
+  
+
+
+
+					
+
+

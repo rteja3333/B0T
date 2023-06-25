@@ -1,0 +1,82 @@
+
+Example − A standard item function is totally different from the function of a free of charge item or a text item.
+As per the sales document type, you can define different types of item categories. If required, you can also modify the existing item categories or can also define new item categories. An item category can be defined on the basis of the following questions −
+General Data Control Elements
+
+An item refers to a material or a text item?
+Whether pricing has to be carried out for an item?
+Are schedule lines allowed for an item?
+When the item has to be considered as completed?
+If an item cannot be fully delivered, a message will appear in the system or not?
+Which partner functions are allowed for an item?
+Which output is allowed for business transactions?
+
+Shipping Data Control Elements
+
+Is the volume and weight of an item determined?
+Whether this Item is relevant for a delivery or not?
+
+Billing Data Control Elements
+
+Is the item suitable for billing?
+Should the cost of this item be determined?
+Is it a return item?
+Whether it is a statistical item?
+
+
+
+Categorization
+Description of an Item
+
+
+TAN
+Standard Item
+
+
+TAB
+Individual Purchase Order
+
+
+TAS
+Third Party Item
+
+
+TAD
+Service
+
+
+TANN
+Free of charge item
+
+
+TATX
+Text item
+
+
+AFX
+Inquiry item
+
+
+AGX
+Quotation item
+
+
+To create an Item − T-Code: VOV4
+
+The list of all existing items will be displayed. Then you can click on New Entries to create a new item.
+
+A new window will now open, then you can enter the below details − 
+Sales Document Type → Item cat.group → Item Category (This will be default as per the Sales Document Type. You can change it with a manual item category.) → Manual item category (You can use manual item category in place of default item category)
+
+Once all the details are mentioned, click on the save icon.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

@@ -1,0 +1,85 @@
+
+These functions are categorized as per partner type in Sales and Distribution system. The below partner types are Customer, Vendor, Personnel, Contact Person and common partner functions as per these partner types are −
+
+Partner Type Customer
+
+Sold-To-Party
+Ship-To –Party
+Bill-To-Party
+Payer
+
+
+Partner Type Contact Person
+Partner Type Vendor
+Forwarding Agent
+Partner Type Personnel
+Employee Responsible
+Sales Personnel
+
+The following tables show the main partner types and their corresponding partner function in Sales and Distribution −
+Note that if a partner belongs to a different partner type, in this case you need to create a master records for that partner.
+
+
+Partner Type
+Partner Function
+Entry from System
+Master Record
+
+
+Customer(CU)
+
+Sold-to Party(SP)
+Ship-to Party(SH)
+Bill-to Party(BP)
+Payer(PY)
+
+Customer number
+customer master record
+
+
+Vendor(V)
+Forwarding agent(fwdg agent)
+Vendor number
+Vendor master record
+
+
+Human Resource(HR)
+
+Employee responsible(ER)
+Sales Personnel(SP)
+
+Personnel number
+Personnel master record
+
+
+Contact Person(CP)
+Contact Person(CP)
+Contact Partner number
+(created in customer master record,no master record of its own)
+
+
+Creating a Partner Function
+Use T-Code: VOPAN
+
+A new window will open. Select the Partner Object and click the Change button.
+
+It will open a new window with the name Partner Determination Procedures. Go to New Entries.
+
+Enter the name and partner determination procedure and double click on Partner Function in left pane.
+
+Click the New Entries button.
+
+Enter the Partner function details − Name, Type, etc. KU- stands for Customer.
+
+Next is to click on the Partner Function under Partner Determination Procedure node and enter the details Partner Det. Procedure, Name, Partner Function.
+Then, we need to assign this partner determination procedure to the Partner Object. The Partner Object would be a Customer for this example. Then Click on Account Groups and Select the Account group name from the list. Once it is done, Click Save, it will save the partner function.
+
+ 
+ 
+  
+
+
+
+					
+
+

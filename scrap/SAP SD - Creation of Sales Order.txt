@@ -1,0 +1,101 @@
+
+The Structure of a Sales Order
+An inquiry from a customer consists of one or more items that contains the quantity of a material or service entered in the order. The quantity in a sales order is further divided into business lines and comprises of various subsets and delivering dates. The items mentioned in the Sales order are combined in a hierarchy and allows to differentiate between batches or to use combinations of materials. All the valid conditions on these items are mentioned in item conditions. These conditions for an item can be derived via a full condition and can be valid for the entire sales order.
+You can divide an item to multiple billing plan deadlines and each of them will tell you the time, when a fixed amount of the item is to be billed.
+
+VA02 − Edit a Sales Order.
+VA03 − Display a Sales Order.
+
+T-Code − VA01 Create a Sales Order
+
+A new window will open, then you can enter the below details −
+Enter the Order Type, below order types are available. Enter the sales organization, distribution channel and division. You can also click on Create with Reference option to open a Sales order with reference to an inquiry or even a quotation.
+
+
+CR
+Credit Memo
+
+
+GK
+Master Contact
+
+
+KA
+Consignment Pick-up
+
+
+KB
+Consignment fill-up
+
+
+KE
+Consignment issue
+
+
+FD
+Delivery free of charge
+
+
+CQ
+Quantity contract
+
+
+SD
+Subsequent Del. Free of charge
+
+
+KR
+Consignment returns
+
+
+DR
+Debit memo request
+
+
+PV
+Item Proposal
+
+
+RE
+Returns
+
+
+RK
+Invoice correction request
+
+
+RZ
+Returns scheduling agreement
+
+
+SO
+Rush order
+
+
+OR
+Standard Order
+
+
+
+Once you click on Create with Reference, a new window will open. Enter the Quotation number and click on Copy.
+
+It will open a new window. Enter the following details −
+
+Enter Ship-To-Party, Purchase Order and Date.
+Enter the Required Delivery Date.
+Enter the item details.
+
+
+In VA01, it allows you to enter header data and item data. Then to enter Header data, click on Goto Tab → Header and select header data. The next step is to click on the Goto tab → Item → select item data and once done click on OK.
+After this you can click on the save icon at the top. You will get a confirmation message −
+
+
+ 
+ 
+  
+
+
+
+					
+
+

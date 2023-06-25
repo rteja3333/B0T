@@ -1,0 +1,38 @@
+
+Use T-Code: MM01 to create material master for different views. To check the changes, use T-Code: MM04
+
+A new window will open. Enter the Industry Sector and Material Type. Click Select View(s).
+
+Select Sales Org Data 1, Sales Org Data 2, Sales: General/Plant Data and click the Green tick mark below.
+
+Then a new window will open. Enter the Plant, Sales Organization and Distribution Channel for which the material is to be extended. Repeated entries have to be made for various materials with the above selections.
+
+A new window will open, then you can enter the following details −
+
+Material Details
+Base unit of Measure
+Division
+Material Group
+Tax
+
+
+Then, go to Sales Org 2 tab. This information is required for analysis.
+
+Material Statistics Group − Value should be ‘1’ always. Value in this field with Customer Statistical Group maintained in customer master will update the information system.
+Gen Item Category Group and Item Category Group − Generally for Finished Products value NORM will default in both the fields.
+
+
+Go to Sales − General/Plant tab. Enter the value of Availability check, Transport group and loading group, SerialNoProfile (managed if base unit of measure is discrete, not required here) and Press Enter → Yes
+
+You will get a confirmation message.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

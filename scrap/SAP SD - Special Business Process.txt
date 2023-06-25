@@ -1,0 +1,62 @@
+
+Consignments Processing
+Consignments are known as products, which are owned by your company and are located at the client location. It is not required for the customer to pay for these goods, until they are moved from the consignment stock. The customers can also return the products in consignment stock, which are not required.
+Key Features of Consignment Stock
+
+The goods in a consignment stock can be accessed by the customer at any time.
+Consignment goods are stored by the customers at their warehouse.
+Customer has to only pay for goods, which are removed from the stock and only for the quantity taken.
+
+As the consignment stock is still a part of company’s valuable stock, so there is a need to manage this in the system. You must manage the consignment stock separately, so that company should be aware, which stock is available at the customer location. This should be managed separately for each customer.
+For an organization, consignment stock is managed as a special stock in inventory and this helps you to track returnable goods from the customer. Consignment stock management includes four key activities in the system, which are −
+
+Creating a Consignment Fill-Up (Stock is fill up at warehouse).
+Creating Consignment Issue (Stock issued from warehouse).
+Creating a Consignment Pick-Up (Stock return to manufacturer).
+Displaying Consignment Returns (Stock return from customer).
+
+Creating a Consignment Fill-up
+In this, stock is stored at the customer location and owned by the company. This is called Consignment fill up (CF) and sales order –KB is used for this.
+T-Code: VA01
+
+Enter Order Type and then enter Organization Data −
+
+A new window will open, then you can enter the following details −
+
+Purchase Order Number
+Purchase Order Date
+Order Quantity
+
+Once these details are entered, click Save.
+
+Consignment Issue
+This is for the goods that are issued to the customer from a warehouse.
+T-Code: VA01
+Order Type: CI
+Sales Order Type: KE
+Click save.
+
+Consignment Return
+This is done for the goods returned from the customer.
+T-Code: VA01
+Order Type: CONR
+Sales Order Type: KA
+Click save, once all the details are entered.
+
+Consignment Pickup
+When a customer requests return of a product to the company, this is known as a consignment pick up.
+T-Code: VA01
+Order Type: CP
+Sales Order Type: KR
+Once these details are entered, click save.
+
+
+ 
+ 
+  
+
+
+
+					
+
+

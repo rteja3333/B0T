@@ -1,0 +1,33 @@
+
+You can create or maintain access sequence in customizing −
+Go to SPRO → IMG → Sales and Distribution → Basic Functions → Pricing → Pricing Control → Define Access Sequences.
+
+Determine Pricing by item Category
+It is not necessary that all the items are suitable for pricing or not. If an item is not relevant for pricing, then line item will be blank for that item. An Item category is used to control the pricing of an item.
+Billing Item Categories
+
+An item is suitable for billing?
+Cost of item should be determined?
+Is it a return item?
+Whether it is a statistical item?
+
+T-Code: OVKO
+
+Enter Pricing flag in pricing field.
+
+Enter Statistical value as − Blank, X, Y. Statistical value flag control an item in sales document as shown below.
+
+Click the save button.
+
+
+
+
+ 
+ 
+  
+
+
+
+					
+
+

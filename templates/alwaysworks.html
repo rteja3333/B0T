@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHAT NTT</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100vh;
+    }
+
+    .form-wrapper {
+      width: 100%;
+      padding: 0 1rem;
+      max-width: 1000px; /* Adjust the value as per your preference */
+      margin: 0 auto; /* Center the form horizontally */
+      display: flex; /* Add flex display to create a flex container */
+      justify-content: space-between; /* Distribute items with equal space */
+      align-items: flex-start; /* Align items at the start of the flex container */
+    }
+
+    .form-wrapper .form-group {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; /* Allow the input field to grow and occupy remaining space */
+    }
+
+    .form-wrapper .form-group .form-control {
+      margin-bottom: 1rem;
+      width: 100%; /* Make the text input field occupy the full width */
+    }
+
+    .form-wrapper .form-group .btn {
+      margin-top: 10rem; /* Add margin between the text box and the submit button */
+    }
+
+    .center-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="center-heading">
+        <h1 class="mt-5">CHAT NTT</h1>
+      </div>
+
+      <div class="form-wrapper">
+        <div class="form-group">
+          <input type="text" id="question" name="question" class="form-control" placeholder="Type your question here">
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="submitQuestion()">Submit</button>
+      </div>
+    </div>
+    <div id="response-container"></div> <!-- Add the response container -->
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+
+</body>
+</html>

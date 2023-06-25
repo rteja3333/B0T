@@ -1,0 +1,26 @@
+
+
+Quantity Management and adjustment
+Text Management
+Printing
+Validation
+
+You can post quantity difference in the inbound delivery for outbound delivery to post change in delivery. Using text management, you can make the following changes to the delivery document like −
+
+Display
+Change
+Delete
+Save
+
+If you want to create and save new texts for a particular delivery, this can also be done.
+Printing is done in EWM to print delivery notes. You can create an outbound delivery order or an outbound delivery. Validation in EWM is used to verify the delivery document, if it is complete and can be further processed in the system.
+
+ 
+ 
+  
+
+
+
+					
+
+
